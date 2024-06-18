@@ -1,0 +1,104 @@
+body,html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: wheat;
+}
+#canvas-container {
+    position: relative;
+    width: 457px;
+    height: 138px;
+    
+}
+#canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 449px;
+    height: 130px;
+    border: 4px solid white;
+    background-color: white;
+}
+
+#image {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    
+    width: 130px;
+    height: 130px;
+    object-fit: cover; /* Adjusts the image to cover the specified dimensions */
+    z-index: 1; /* Ensure the image is above the canvas */
+}
+#moshhasnandani {
+    position: absolute;
+    top: 20px; /* 24px from the top */
+    left: 144px; /* 14px from the right */
+    z-index: 2; /* Ensure it's above the canvas and image */
+    font-weight: Bold;
+    font-family:  Roboto;
+}
+
+#teach-message {
+    position: absolute;
+    top: 54px; /* 14px down from the previous position */
+    left: 144px; /* Same distance from the right */
+    z-index: 2; /* Ensure it's above the canvas and image */
+    font-size: 20px;
+    font-family:  Roboto;
+}
+
+#small-image {
+    position: absolute;
+    top: 98px; /* 20px below the text */
+    left: 148px; /* Same distance from the right */
+    z-index: 2; /* Ensure it's above the canvas and image */
+}
+
+#count-reply {
+    position: absolute;
+    top: 98px; /* 14px down from the previous position */
+    left: 178px; /* Same distance from the right */
+    z-index: 2; /* Ensure it's above the canvas and image */
+    font-family: Roboto;
+    font-weight: medium;
+    font-size: 15px;
+    color: #858991;
+}
+
+#small-image-retweet {
+    position: absolute;
+    top: 98px; /* 20px below the text */
+    left: 231px; /* Same distance from the right */
+    z-index: 2; /* Ensure it's above the canvas and image */
+}
+
+#count-retweet {
+    position: absolute;
+    top: 98px; /* 14px down from the previous position */
+    left: 265px; /* Same distance from the right */
+    z-index: 2; /* Ensure it's above the canvas and image */
+    font-family:  Roboto;
+    font-weight: medium;
+    font-size: 15px;
+    color: #858991;
+}
+
+#small-image-like {
+    position: absolute;
+    top: 98px; /* 20px below the text */
+    left: 314px; /* Same distance from the right */
+    z-index: 2; /* Ensure it's above the canvas and image */
+}
+
+#count-likes {
+    position: absolute;
+    top: 98px; /* 14px down from the previous position */
+    left: 348px; /* Same distance from the right */
+    z-index: 2; /* Ensure it's above the canvas and image */
+    font-family: Roboto;
+    font-weight: medium;
+    font-size: 15px;
+    color: #858991;
+}

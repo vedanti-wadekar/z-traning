@@ -1,0 +1,107 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Grid Layout</title> 
+    <style>
+     body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: auto;
+    font-family: 'Times New Roman', Times, serif;
+    }
+
+    .container {
+        display: grid;
+        height: 80vh;
+        width: 100vh;
+        grid-template-rows: auto 1fr auto;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas:
+            "header header header"
+            "sidebar content1 content1"
+            "sidebar content2 content3"
+            "footer footer footer";
+    
+    }
+
+    .header {
+        grid-area: header;
+        height: 8vh;
+        background:#9379c9 ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+        width:20vh; 
+        background: turquoise;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content1 {
+        grid-area: content1;
+        /*height: 25vh;
+        width: 30vh;*/
+        background: linear-gradient(to bottom right, #8b4cdf, #1e90ff, turquoise);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content2 {
+        grid-area: content2;
+        height: 30vh;
+        width: 40vh;
+        background: linear-gradient(to bottom right,#8b4cdf, #1e90ff, turquoise);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: -1px;
+    }
+
+    .content3 {
+        grid-area: content3;
+        height: 30vh;
+        width: 40vh;
+        background: linear-gradient(to bottom right, #8b4cdf, #1e90ff, turquoise);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -1px;
+    }
+
+    .footer {
+        grid-area: footer;
+        height: 12vh;
+        background: #9370db;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div {
+        color: white;
+        font-size: 1.5rem;
+        border: 1px solid #fff;
+    }
+
+    </style> 
+    </head> 
+    <body> 
+        <div class="container"> 
+            <div class="header">header</div> 
+            <div class="sidebar">sidebar</div> 
+            <div class="content1">Content-1</div> 
+            <div class="content2">Content-2</div> 
+            <div class="content3">Content-3</div> 
+            <div class="footer">footer</div> 
+        </div> 
+    </body> 
+    </html>

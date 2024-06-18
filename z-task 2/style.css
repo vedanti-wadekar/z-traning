@@ -1,0 +1,50 @@
+body {
+    background-color: lemonchiffon;
+}
+
+#heading1 {
+    background-color: darkred;
+    text-align: center;
+    color: lemonchiffon;
+    font-family: monospace;
+    height: 40px;
+}
+
+#sep {
+    background-color: red;
+}
+
+#heading2, #heading3, #heading4, #heading5 {
+    background-color: forestgreen;
+    color: white;
+}
+
+#lists {
+    color: darkred;
+    transform: skew(-5deg);
+    -webkit-transform: skew(-5deg);
+}
+
+#para1 {
+    font-size: 24px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#img1 {
+    border-style: dotted;
+    border-color: lightgrey;
+    box-sizing: content-box;
+    width: 200px;
+}
+
+#heading6, #heading7 {
+    color: grey;
+}
+
+table {
+    background-color: lightgrey;
+}
+/*changes to git*/
